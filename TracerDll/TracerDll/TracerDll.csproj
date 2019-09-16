@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Main">
+      <HintPath>..\..\Main\Main\bin\Debug\netcoreapp2.1\Main.dll</HintPath>
+    </Reference>
+    <Reference Include="MainApp">
+      <HintPath>..\..\MainApp\MainApp\bin\Debug\netcoreapp2.1\MainApp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

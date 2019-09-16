@@ -1,0 +1,8 @@
+<TraceResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ms>656</ms>
+  <nesting>1</nesting>
+  <methodName>Main</methodName>
+  <className>ConsoleApp</className>
+  <threadId>1</threadId>
+  <nestedMethods />
+</TraceResult>

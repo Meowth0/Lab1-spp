@@ -1,0 +1,12 @@
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\bin\Debug\netstandard2.0\TracerDll.deps.json
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\bin\Debug\netstandard2.0\TracerDll.dll
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\obj\Debug\netstandard2.0\TracerDll.csproj.CoreCompileInputs.cache
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\obj\Debug\netstandard2.0\TracerDll.AssemblyInfoInputs.cache
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\obj\Debug\netstandard2.0\TracerDll.AssemblyInfo.cs
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\obj\Debug\netstandard2.0\TracerDll.csprojAssemblyReference.cache
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\bin\Debug\netstandard2.0\TracerDll.pdb
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\obj\Debug\netstandard2.0\TracerDll.csproj.CopyComplete
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\obj\Debug\netstandard2.0\TracerDll.dll
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\obj\Debug\netstandard2.0\TracerDll.pdb
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\bin\Debug\netstandard2.0\Main.dll
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\TracerDll\TracerDll\bin\Debug\netstandard2.0\Main.pdb

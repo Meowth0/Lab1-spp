@@ -1,0 +1,14 @@
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\bin\Debug\netcoreapp2.1\Main.deps.json
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\bin\Debug\netcoreapp2.1\Main.runtimeconfig.json
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\bin\Debug\netcoreapp2.1\Main.runtimeconfig.dev.json
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\bin\Debug\netcoreapp2.1\Main.dll
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\bin\Debug\netcoreapp2.1\Main.pdb
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\bin\Debug\netcoreapp2.1\TracerDll.dll
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\bin\Debug\netcoreapp2.1\TracerDll.pdb
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\obj\Debug\netcoreapp2.1\Main.csprojAssemblyReference.cache
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\obj\Debug\netcoreapp2.1\Main.csproj.CoreCompileInputs.cache
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\obj\Debug\netcoreapp2.1\Main.AssemblyInfoInputs.cache
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\obj\Debug\netcoreapp2.1\Main.AssemblyInfo.cs
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\obj\Debug\netcoreapp2.1\Main.csproj.CopyComplete
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\obj\Debug\netcoreapp2.1\Main.dll
+E:\Учеба. 5 сем\СПП\labs\lab1\Lab1-spp\Main\Main\obj\Debug\netcoreapp2.1\Main.pdb
