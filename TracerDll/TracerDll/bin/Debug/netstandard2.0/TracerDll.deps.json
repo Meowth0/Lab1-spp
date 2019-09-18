@@ -11,8 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
-          "Main": "1.0.0.0",
-          "MainApp": "1.0.0.0"
+          "Main": "1.0.0.0"
         },
         "runtime": {
           "TracerDll.dll": {}
@@ -35,14 +34,6 @@
       "Main/1.0.0.0": {
         "runtime": {
           "Main.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "MainApp/1.0.0.0": {
-        "runtime": {
-          "MainApp.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -86,11 +77,6 @@
       "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
     },
     "Main/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MainApp/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -12,29 +12,26 @@ namespace Main
     public class ConsoleApp
     {
         public static List<Dictionary<int, TraceResult>> buffer = new List<Dictionary<int, TraceResult>>();
+        public static List<TraceResult> results = new List<TraceResult>();
         static void Method()
         {
             var tracer = new Tracer();
             tracer.StartTrace();
-            
-            Method2();
+            CreateAndStartThread(Method2);
             tracer.StopTrace();
-            tracer.GetTraceResult();
-            
+            tracer.GetTraceResult(); 
         }
 
         static void Method1()
         {
-
-                var tracer = new Tracer();
-                tracer.StartTrace();
-                Thread.Sleep(10);
-                Method2();
+            var tracer = new Tracer();
+            tracer.StartTrace();
+            Thread.Sleep(10);
+            Method2();
             Method3();
-                tracer.StopTrace();
-                //tracer.GetTraceResult();
-                new PrintResultToConsole().PrintResult(new TransformDataToJSON().GetFormatData(tracer.GetTraceResult()));
-               
+            tracer.StopTrace();
+            tracer.GetTraceResult();
+            //new PrintResultToConsole().PrintResult(new TransformDataToJSON().GetFormatData(tracer.GetTraceResult()));   
         }
         static void Method2()
         {
@@ -43,22 +40,18 @@ namespace Main
             Thread.Sleep(10);
             Method3();
             tracer.StopTrace();
-            tracer.GetTraceResult();
+            results.Add(tracer.GetTraceResult());
             //new PrintResultToConsole().PrintResult(new TransformDataToJSON().GetFormatData(tracer.GetTraceResult()));
         }
 
         static void Method3()
         {
-
-                var tracer = new Tracer();
-                tracer.StartTrace();
-                Thread.Sleep(10);
-                tracer.StopTrace();
-                tracer.GetTraceResult();
-                //new PrintResultToConsole().PrintResult(new TransformDataToJSON().GetFormatData(tracer.GetTraceResult()));
-            
-            
-
+            var tracer = new Tracer();
+            tracer.StartTrace();
+            Thread.Sleep(10);
+            tracer.StopTrace();
+            tracer.GetTraceResult();
+            //new PrintResultToConsole().PrintResult(new TransformDataToJSON().GetFormatData(tracer.GetTraceResult()));
         }
 
 
@@ -66,7 +59,7 @@ namespace Main
         {
             Thread thread = new Thread(new ThreadStart(target));
             thread.Start();
-            //thread.Join();
+            thread.Join();
         }
 
         public class Foo
@@ -87,13 +80,12 @@ namespace Main
             tracer.StartTrace();
             var foo = new Foo();
 
-            CreateAndStartThread(Method1);
+            //CreateAndStartThread(Method1);
 
             foo.InnerMethod();
             tracer.StopTrace();
-            new PrintResultToConsole().PrintResult(new TransformDataToJSON().GetFormatData(tracer.GetTraceResult()));
-            //Thread thread = new Thread(new ThreadStart(foo.InnerMethod));
-            //thread.Start();
+            results.Add(tracer.GetTraceResult());
+            new PrintResultToConsole().PrintResult(new TransformDataToJSON().GetFormatData(results));
 
             //var json = new TransformDataToJSON().GetFormatData(tracer.GetTraceResult());
             //var xml = new TransformDataToXML().GetFormatData(tracer.GetTraceResult());

@@ -10,7 +10,7 @@ namespace TracerDll
 {
     public class TransformDataToXML : ITransformData
     {
-        public string GetFormatData(TraceResult traceResult)
+        public string GetFormatData(List<TraceResult> traceResult)
         {
             var xml = new XmlSerializer(typeof(TraceResult));
             using (var sww = new StringWriter())

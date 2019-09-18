@@ -7,7 +7,7 @@ namespace TracerDll
 {
     public interface ITransformData
     {
-        string GetFormatData(TraceResult traceResult);
+        string GetFormatData(List<TraceResult> traceResult);
 
     }
 }

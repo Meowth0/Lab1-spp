@@ -11,6 +11,7 @@ namespace TracerDll
     public class Tracer : ITracer
     {
         private Stopwatch time;
+    
 
         public void StartTrace()
         {
@@ -36,26 +37,24 @@ namespace TracerDll
                 threadId = Thread.CurrentThread.ManagedThreadId,
                 nestedMethods = new List<TraceResult>()
             };
-            string[] stackNames = new string[stackFrames.Length];
-            for (int i = 0; i < stackFrames.Length; i++)
-            {
-                stackNames[i] = stackFrames[i].GetMethod().Name;
-            }
 
-            traceResult.nesting = Array.IndexOf(stackNames, "Main");
-            if (traceResult.nesting == -1)
-            {
-                traceResult.nesting = Array.IndexOf(stackNames, "RunInternal");
-                
-            }
+
+            traceResult.nesting = stackFrames.Length - 1;//Array.IndexOf(stackNames, stackFrames[stackFrames.Length - 1].GetMethod().Name);
+            //if (traceResult.nesting == -1)
+            //{
+            //    traceResult.nesting = Array.IndexOf(stackNames, "RunInternal");
+            //    if (traceResult.nesting == -1)
+            //    {
+            //        Array.IndexOf(stackNames, "")
+            //    }
+            //}
 
 
             try
             {
-                TraceResult temp;
                 for (var i = 0; i < buffer.Count; i++)
                 {
-                    if (buffer[i].TryGetValue(traceResult.threadId, out temp))
+                    if (buffer[i].TryGetValue(traceResult.threadId, out TraceResult temp))
                     {
                         if (temp.nesting == traceResult.nesting + 1 && temp.threadId == traceResult.threadId)
                         {
@@ -72,29 +71,25 @@ namespace TracerDll
                 Console.WriteLine(e);
             }
 
-            if (buffer.Count > 0)
-            {
-                var dic = new Dictionary<int, TraceResult>();
-                dic.Add(traceResult.threadId, traceResult);
-                for (var i = 0; i < buffer.Count; i++)
-                {
-                    if ((buffer[i].Keys.ElementAt(0) != traceResult.threadId || buffer[i][buffer[i].Keys.ElementAt(0)].nesting != dic[dic.Keys.ElementAt(0)].nesting))
-                    {
-                        buffer.Add(dic);
-                        break;
-                    }
-                }
-            }
-            else
-            {
+            //if (buffer.Count > 0)
+            //{
+            //    var dic = new Dictionary<int, TraceResult>();
+            //    dic.Add(traceResult.threadId, traceResult);
+            //    for (var i = 0; i < buffer.Count; i++)
+            //    {
+            //        if ((buffer[i].Keys.ElementAt(0) != traceResult.threadId || buffer[i][buffer[i].Keys.ElementAt(0)].nesting != dic[dic.Keys.ElementAt(0)].nesting))
+            //        {
+            //            buffer.Add(dic);
+            //            break;
+            //        }
+            //    }
+            //}
+            //else
+            //{
                 var dic = new Dictionary<int, TraceResult>();
                 dic.Add(traceResult.threadId, traceResult);
                 buffer.Add(dic);
-            }
-            
-
-
-            
+            //}
 
             return traceResult;
         }

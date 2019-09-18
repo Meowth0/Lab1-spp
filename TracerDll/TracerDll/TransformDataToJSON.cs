@@ -7,7 +7,7 @@ namespace TracerDll
 {
     public class TransformDataToJSON : ITransformData
     {
-        public string GetFormatData(TraceResult traceResult)
+        public string GetFormatData(List<TraceResult> traceResult)
         {
             /*
             Method2 Program 7082 1 Method1
